@@ -1,0 +1,45 @@
+.why {
+  padding: 112px 0 0 0;
+}
+@media (max-width: 768px) {
+  .why {
+    padding: 38px 0 0 0;
+  }
+}
+.why__body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .why__body {
+    flex-direction: column-reverse;
+    gap: 35px;
+  }
+}
+.why__column {
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 50%;
+}
+.why__column_2 {
+  align-items: center;
+}
+.why__column > *:not(:last-child) {
+  margin: 0px 0px 24px 0px;
+}
+.why__buttons {
+  display: inline-flex;
+}
+.why__btn {
+  background: #6bc2f1;
+  color: #fff;
+}
+.why__image {
+  max-width: 448px;
+}
+.why__image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}

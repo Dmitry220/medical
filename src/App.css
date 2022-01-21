@@ -1,0 +1,117 @@
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+}
+._ibg {
+  position: relative;
+}
+._ibg img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+._container {
+  max-width: 1170px;
+  padding: 0px 15px;
+  margin: 0px auto;
+  box-sizing: content-box;
+}
+.text {
+  font-size: 18px;
+  line-height: 150%;
+  font-family: "roboto";
+}
+
+@media (max-width: 527px) {
+	.text{
+		line-height: 30px;
+	}
+}
+.btn {
+  position: relative;
+  z-index: 4;
+  display: flex;
+  min-height: 45px;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 0.7px;
+  cursor: pointer;
+  font-weight: 400;
+  text-align: center;
+  line-height: 150%;
+  padding: 0px 30px;
+  font-size: 12px;
+  text-transform: uppercase;
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+  font-family: "roboto";
+  white-space: nowrap;
+  border: 1px solid #6bc2f1;
+}
+.btn:hover {
+  background: #fff;
+  color: #6bc2f1;
+  
+  /* margin: 0 10px; */
+}
+@media (max-width: 527px) {
+	.btn{
+		padding: 0 15px;
+		min-height: 30px;
+		margin: 0 0 0 5px;
+	}
+}
+.overTitle {
+
+  font-family: "roboto";
+  font-size: 19px;
+  text-transform: uppercase;
+}
+
+.overTitle_blue {
+	color: #6bc2f1;
+	font-family: "roboto";
+	font-size: 19px;
+	text-transform: uppercase;
+  }
+@media (max-width: 768px) {
+	.overTitle{
+		font-size: 18px;
+	}
+}
+.title {
+  /* color: #1b1b1b; */
+  font-family: "roboto";
+  font-size: 36px;
+}
+
+@media (max-width: 768px) {
+	.title{
+		font-size: 22px;
+	}
+}
+.page {
+  flex: 1 1 auto;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+section{
+  transition: 2s all;
+ opacity: 0;
+}
+.page>section:nth-child(1){
+  opacity: 1;
+}
+section.show{
+  opacity: 1;
+}

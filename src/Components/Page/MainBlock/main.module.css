@@ -1,0 +1,88 @@
+/* .page__mainBlock{  
+} */
+.mainBlock {
+  position: relative;
+}
+/* .mainBlock__container {
+} */
+.mainBlock__body {
+  padding: 370px 0px 137px 0px;
+  position: relative;
+  z-index: 2;
+  max-width: 540px;
+}
+@media (max-width: 992px) {
+  .mainBlock__body {
+    padding: 120px 0px 64px 0px;
+  }
+}
+@media (max-width: 479px) {
+  .mainBlock__body {
+    padding: 115px 0px 56px 0px;
+  }
+}
+.mainBlock__body > *:not(:last-child) {
+  margin: 0px 0px 35px 0px;
+}
+.mainBlock__title {
+  font-size: 70px;
+  line-height: 137%;
+  letter-spacing: 0.2px;
+  font-weight: 400;
+  color: #fff;
+}
+@media (max-width: 563px) {
+  .mainBlock__title {
+    font-size: 42px;
+  }
+}
+@media (max-width: 351px) {
+  .mainBlock__title {
+    font-size: 35px;
+  }
+}
+.mainBlock__subTitle {
+  color: #fff;
+  font-size: 26px;
+  font-family: "roboto";
+  font-weight: 100;
+}
+@media (max-width: 479px) {
+  .mainBlock__subTitle {
+    font-size: 18px;
+  }
+}
+.mainBlock__text{
+  color: #fff;
+}
+.mainBlock__buttons {
+  display: flex;
+  flex-wrap: wrap;
+}
+.mainBlock__button {
+  background: #fff;
+  color: #061b46;
+  border: 1px solid #061b46;
+  transition: 0.3s all;
+}
+.mainBlock__button:hover {
+  background: #061b46;
+  color: #fff;
+}
+@media (max-width: 479px) {
+  .mainBlock__button {
+    flex: 1 1 100%;
+  }
+}
+@media (min-width: 479px) {
+  .mainBlock__button:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+.mainBlock__image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
