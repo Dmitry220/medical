@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, {useEffect, useRef} from 'react';
 import header from './header.module.css'
 import { Link } from "react-router-dom";
 import AnchorLink from 'react-anchor-link-smooth-scroll'
@@ -6,9 +6,11 @@ import AnchorLink from 'react-anchor-link-smooth-scroll'
 export const Header = ({ themeToggler, burgerActive, setBurgerActive }) => {
 
 	let scrollPrev = 0;
-	
+	const r = useRef()
+
 	useEffect(() => {
-		const onScroll = e => {
+
+		const onScroll = () => {
 			let scrolled = window.pageYOffset;
 			if (scrolled > 100 && scrolled > scrollPrev) {
 				document.querySelector(`.${header.header}`).classList.add(`${header.out}`);
@@ -21,14 +23,18 @@ export const Header = ({ themeToggler, burgerActive, setBurgerActive }) => {
 		return () => window.removeEventListener("scroll", onScroll);
 	}, [scrollPrev])
 
+	useEffect(()=>{
+		document.querySelector('body').classList.toggle('lock');
+	}, [burgerActive])
+
 	return (
-		<header className={header.header}>
+		<header className={header.header} ref={r}>
 			<div className={header.header__container}>
 				<div className={header.header__body}>
 					<div className={header.header__column + ' ' + header.header__column_1}>
 						<Link to="/" className={header.header__logo}>Medical </Link>
 						<div className={burgerActive ? header.header__burger + ' ' + header.active : header.header__burger} onClick={() => setBurgerActive(prev => !prev)}>
-							<span></span>
+							<span />
 						</div>
 						<nav className={burgerActive ? header.header__menu + ' ' + header.active : header.header__menu}>
 							<ul className={header.header__list}>
@@ -41,7 +47,7 @@ export const Header = ({ themeToggler, burgerActive, setBurgerActive }) => {
 								<li className={header.themeCheck}><div className={header.header__link}>Темная тема</div>
 									<label className={header.switch}>
 										<input type="checkbox" onChange={themeToggler} />
-										<span className={header.slider + ' ' + header.round}></span>
+										<span className={header.slider + ' ' + header.round} />
 									</label>
 								</li>
 							</ul>
