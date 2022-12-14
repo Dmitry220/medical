@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/medical/static/css/main.adc4260d.css",
+    "main.js": "/medical/static/js/main.6cf4391b.js",
+    "static/css/734.fb86e963.chunk.css": "/medical/static/css/734.fb86e963.chunk.css",
+    "static/js/734.3fbbe12a.chunk.js": "/medical/static/js/734.3fbbe12a.chunk.js",
+    "static/js/787.598b3a15.chunk.js": "/medical/static/js/787.598b3a15.chunk.js",
+    "static/media/bg header replace.jpg": "/medical/static/media/bg header replace.01379811c06a1dfb8c7b.jpg",
+    "static/media/feature_1.jpg": "/medical/static/media/feature_1.16214a4cd2d967cbd2b8.jpg",
+    "static/media/Roboto-Black.ttf": "/medical/static/media/Roboto-Black.07a21e85941a6d3ca8a6.ttf",
+    "static/media/Roboto-Medium.ttf": "/medical/static/media/Roboto-Medium.58a88fefc100ccf3cf59.ttf",
+    "static/media/replace image.jpg": "/medical/static/media/replace image.ceb0df3747f1838f4a05.jpg",
+    "static/media/5.jpg": "/medical/static/media/5.cdcdacdad5fafd8e3d78.jpg",
+    "static/media/2.jpg": "/medical/static/media/2.6cc3b57a5aca43de0292.jpg",
+    "static/media/4.jpg": "/medical/static/media/4.5e2329243a9401ac7f5d.jpg",
+    "static/media/1.jpg": "/medical/static/media/1.8836129abd4e9c1b7d6f.jpg",
+    "static/media/6.jpg": "/medical/static/media/6.49a4845d254d6d858066.jpg",
+    "static/media/3.jpg": "/medical/static/media/3.9b1d5c28be85fe104507.jpg",
+    "index.html": "/medical/index.html",
+    "main.adc4260d.css.map": "/medical/static/css/main.adc4260d.css.map",
+    "main.6cf4391b.js.map": "/medical/static/js/main.6cf4391b.js.map",
+    "734.fb86e963.chunk.css.map": "/medical/static/css/734.fb86e963.chunk.css.map",
+    "734.3fbbe12a.chunk.js.map": "/medical/static/js/734.3fbbe12a.chunk.js.map",
+    "787.598b3a15.chunk.js.map": "/medical/static/js/787.598b3a15.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.adc4260d.css",
+    "static/js/main.6cf4391b.js"
+  ]
+}
